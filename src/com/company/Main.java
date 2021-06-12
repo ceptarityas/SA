@@ -13,7 +13,7 @@ public class Main {
 
         Scanner sc =  new Scanner(System.in);
         //text
-        System.out.println("=======Selamat Datang di String Matching=========");
+        System.out.println("======= Selamat Datang di String Matching =========");
         String source = "Menggali Peran Product Designer di Perkembangan Zaman \n" +
                 "Apa Itu Product Designer ?\n" +
                 "Product designer adalah peran yang bertanggung jawab atas pengalaman pengguna suatu aplikasi.\n" +
@@ -74,17 +74,16 @@ public class Main {
         }else{
             System.out.println();
             System.out.println("Brute Force");
-            System.out.println("Himpunan list "+pattern+" berada di posisi [" + (position+1)+","+ (endindex + pattern.length())+"]");
+            System.out.println("Himpunan list '"+pattern+"' berada di posisi [" + (position+1)+","+ (endindex + pattern.length())+"]");
         }
 
-        System.out.println();
+        /*System.out.println();
         System.out.println("Knuth-Morris-Pratt");
-        new KMP().KMPSearch(pattern, source);
+        new KMP().KMPSearch(pattern, source);*/
 
         System.out.println();
         System.out.println("Divide and Conquer");
         List res = solve(source, pattern);
-        System.out.println("[" + res.get(0) + ", " + res.get(res.size() -1) + "]");
-
+        System.out.println("[" + res.get(0) + ", " + res.get(res.size() - 1) + "]");
     }
 }
