@@ -58,7 +58,7 @@ public class Main {
                 "Sementara itu, untuk skill, ada beberapa hal yang berkaitan dengan deskripsi pekerjaan yang wajib dimiliki oleh seorang product designer. Berikut beberapa di antaranya.\n" +
                 "Kemampuan desain pada product designer\n" +
                 "Riset dan penelitian\n" +
-                "Menciptakan prototipe produki.";
+                "Menciptakan prototipe produksi.";
         //word that want to be matched in the text
         System.out.print("Cari Kata : ");
         String pattern;
@@ -84,6 +84,10 @@ public class Main {
         System.out.println();
         System.out.println("Divide and Conquer");
         List res = solve(source, pattern);
-        System.out.println("[" + res.get(0) + ", " + res.get(res.size() - 1) + "]");
+        if (res != null) {
+            System.out.println("[" + res.get(0) + ", " + res.get(res.size() - 1) + "]");
+        } else {
+            System.out.println("Null");
+        }
     }
 }
