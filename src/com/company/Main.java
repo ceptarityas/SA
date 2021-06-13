@@ -77,9 +77,9 @@ public class Main {
             System.out.println("Himpunan list '"+pattern+"' berada di posisi [" + (position+1)+","+ (endindex + pattern.length())+"]");
         }
 
-        /*System.out.println();
+        System.out.println();
         System.out.println("Knuth-Morris-Pratt");
-        new KMP().KMPSearch(pattern, source);*/
+        new KMP().KMPSearch(pattern, source);
 
         System.out.println();
         System.out.println("Divide and Conquer");
