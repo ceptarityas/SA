@@ -33,7 +33,7 @@ public class Main {
             line = reader.readLine();
         }
         //calling the function
-        /*int position = obj.bruteforce(source,pattern);
+        int position = obj.bruteforce(source,pattern);
         int endindex = position+1;
         //condition to check whether the pattern is matched are not
         if(position == -1){
@@ -43,20 +43,20 @@ public class Main {
             System.out.println();
             System.out.println("Brute Force");
             System.out.println("Himpunan list '"+pattern+"' berada di posisi [" + (position+1)+","+ (endindex + pattern.length())+"]");
-        }*/
+        }
 
         System.out.println();
         System.out.println("Knuth-Morris-Pratt");
         new KMP().KMPSearch(pattern, source);
 
-        /*System.out.println();
+        System.out.println();
         System.out.println("Divide and Conquer");
         List res = solve(source, pattern);
         if (res != null) {
             System.out.println("[" + res.get(0) + ", " + res.get(res.size() - 1) + "]");
         } else {
             System.out.println("Null");
-        }*/
+        }
         long endTime   = System.nanoTime();
         long totalTime = endTime - startTime;
         System.out.println("Running Time yang dibutuhkan : "+totalTime+" nanosecond");
